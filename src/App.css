@@ -1,0 +1,74 @@
+body{
+    margin: 0; 
+    overflow: hidden; 
+}
+
+/* Parent container to fill the page with a black background */
+.parent {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Inner container with a dynamic background */
+  .inner-container {
+    border: 1px dotted white;
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Heading positioned above the buttons */
+  .heading {
+    position: absolute;
+    bottom: 120px; /* 100px above the buttons + 20px padding */
+    color: white;
+    margin: 0;
+  }
+  
+  /* Button group styling */
+  .button-group {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Button styling */
+  .button {
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Specific button colors */
+  .button.red {
+    background-color: #f8fbcd;
+  }
+  
+  .button.blue {
+    background-color: #f8fbcd;
+  }
+  
+  .button.green {
+    background-color: #f8fbcd;
+  }
+  
+  .button.purple {
+    background-color: #f8fbcd;
+  }
+  
+  /* Remove margin for the last button */
+  .button-group .button:last-child {
+    margin-right: 0;
+  }
+  
